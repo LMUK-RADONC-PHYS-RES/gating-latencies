@@ -1,0 +1,95 @@
+{
+    "experimentGeneralInfo": {
+        "monthOfExperiment": "t",
+        "dayOfExperiment": "t",
+        "yearOfExperiment": "t",
+        "roomAmbience": "bright",
+        "noteExperiment" : "results_test_install"
+    },
+    "DataInput" : {
+        "motion" :{
+            "ampl_max_std" : 14,
+            "ampl_min_std" : -3.0,
+            "length_plateaus_ref" : 10
+        },
+        "videos" : {
+            "skip_video" : false,
+            "video1": {
+                "filename": "C:/Users/Catrin/LRZ Sync+Share/Promotion/[01] coding/gating_latency_SGRT/testcases/test_DIBH_vid/data_test_DIBH_vid/test_install_from_take2_June2024.MP4",
+                "region" : [10000,15940],
+                "exclude": [0],
+                "newGoProVideo": false,
+                "newVideo": false,
+                "FPS": 120
+                },
+            "video ref 1":{
+                "filename" : "C:/Users/Catrin/LRZ Sync+Share/Promotion/[01] coding/gating_latency_SGRT/testcases/test_DIBH_vid/data_test_DIBH_vid/test_install_from_take2_June2024.MP4",
+                "region" : [104,9999],
+                "exclude": [0],
+                "newGoProVideo": false,
+                "newVideo": false,
+                "FPS": 120
+                }
+        }
+    },
+    "developerSettings":{
+        "intermediate_plotting_of_reference": false,
+        "intermediate_plotting_of_linearFits": false,
+        "allow_intermediate_plotting_of_std_curve_after_latencies": false,
+        "show_final_plot": false,
+        "keep_debugger_trace_at_end": false,
+        "get_only_timestamps_and_break" : false
+    },
+    "analysisSettings": {        
+        "runtime" :{
+        "load_from_post-processedData": false,
+        "loop_over_reference" : false,
+        "loop_over_video" : false,
+        "sampling" : 1
+    },
+        "ROIs" : {
+            "roi_surface" : [639, 452, 691,630], 
+            "roi_LED" : [480,547,618,710],
+            "roi_scinti" : [1303, 788, 1356, 822]
+        },
+        "thresholds" : {
+            "color_space" : "BGR",
+            "threshold_surface" : [200,256],
+            "threshold_surface_hue" : [126,132],
+            "threshold_surface_normalized": [2,10.0],
+            "threshold_surface_normalized_hue" : [1,2],
+            "threshold_scintillator" : [0,256],
+            "threshold_scintillator_hue" : [115,121],
+            "threshold_LED" : [200,256]
+        },
+        "flags" : {
+            "rois_and_thresholds_set" : true,
+            "LED_tracking" : false
+        }
+    },
+    "controlSettings" : {
+        "frame_where_scintillator_on" : 12240,
+        "show_binary" : false
+    },
+    "post-processingSettings" :{
+        "compute_latency" : true,
+        "compute_latency_by_LED" : false,
+        "max_gap_in_beam_ref_seconds" : 9, 
+        "max_gap_in_beam_analysis_seconds" : 4.5
+    },
+    "post_post-processingSettings" : {
+        "plotSettings" :{
+            "plot_gatlat" : true,
+            "plot_std_curve" :true,
+            "plot_reference_curve" : true,
+            "plot_LED" : false
+        },
+        "saveSettings" : {
+            "save_postprocessed_results" : true,
+            "save_latency_results" : true,
+            "save_plots" : false,
+            "save_directory" : "c:\\Users\\Catrin\\LRZ Sync+Share\\Promotion\\[01] coding\\gating_latency_SGRT\\testcases\\test_DIBH_vid\\results_DIBH_vid",
+            "create_PDFreport": false
+        }
+    } 
+}
