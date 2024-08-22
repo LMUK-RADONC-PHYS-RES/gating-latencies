@@ -11,7 +11,7 @@ This project uses videos and photographs to estimate the gating latency of SGRT-
 
 ## Installation & Testing
 1. Download or clone the code from this repository
-2. Download the [test data] (https://drive.google.com/drive/folders/1FIbJGtuY2rg9T6_IJBwp3XNRX0UpYVXH?usp=sharing) and move the folder "data_test_DIBH_vid" to "testcases > test_DIBH_vid"
+2. Download the [test data](https://drive.google.com/drive/folders/1FIbJGtuY2rg9T6_IJBwp3XNRX0UpYVXH?usp=sharing) and move the folder "data_test_DIBH_vid" to "testcases > test_DIBH_vid"
 3. Install Python on your device. This code has been created and tested using Python 3.11.2. You can probably run it with older Python versions, too.
 4. Create a working environment (see requirements). At best, create a virtual environment first. For example, creating a virtual environment called "gatlat" with venv:
 ```shell
@@ -32,7 +32,7 @@ Secondly, run an analysis of the test video (1 reference step pattern, 3 DIBH ph
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_test_DIBH_vid.json
 ```
 The results should read as:
-![Screenshot of results for test video.](Screenshot_testCase_vid.png)
+![Screenshot of results for test video.](screenshots_readme/Screenshot_testCase_vid.png)
 (A proper testing suite is under development.)
 
 ## Reproduce the results of our Poster at [ECMP 2024](https://ecmp2024.org/)
