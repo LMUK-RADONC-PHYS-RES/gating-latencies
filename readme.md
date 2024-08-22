@@ -11,8 +11,9 @@ This project uses videos and photographs to estimate the gating latency of SGRT-
 
 ## Installation & Testing
 1. Download or clone the code from this repository
-2. Install Python on your device. This code has been created and tested using Python 3.11.2. You can probably run it with older Python versions, too.
-3. Create a working environment (see requirements). At best, create a virtual environment first. For example, creating a virtual environment called "gatlat" with venv:
+2. Download the [test data] (https://drive.google.com/drive/folders/1FIbJGtuY2rg9T6_IJBwp3XNRX0UpYVXH?usp=sharing) and move the folder "data_test_DIBH_vid" to "testcases > test_DIBH_vid"
+3. Install Python on your device. This code has been created and tested using Python 3.11.2. You can probably run it with older Python versions, too.
+4. Create a working environment (see requirements). At best, create a virtual environment first. For example, creating a virtual environment called "gatlat" with venv:
 ```shell
 $ <your-python-command> -m venv path\to\venvs\gatlat
 ```
@@ -21,7 +22,7 @@ Secondly, install the requirements:
 $ pip install -r path/to/this/repository/requirements.txt
 ```
 (Testing your installation is not needed, though recommended, if you only want to reproduce the results of our publication. However, if you encounter any inconsistencies with the results of our publications, make sure to run the tests first.)
-3. Test your installation by first, running the in-silico test case on non-video data:
+5. Test your installation by first, running the in-silico test case on non-video data:
 ```shell
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_test_DIBH_noVid.json
 ```
@@ -37,9 +38,10 @@ The results should read as:
 ## Reproduce the results of our Poster at [ECMP 2024](https://ecmp2024.org/)
 1. Run the installation and testing process as above.
 2. Make sure to access the commit with the right tag "ECMP2024"
-3. Make sure data_pub > data_ECMP2024 is part of your repository
-4. Adjust the absolute paths in the respective config files "config_video_recXXX_ECMP_results.json"(3 paths per file) before execution
-4. run 
+3. Download [data_ECMP2024](https://drive.google.com/drive/folders/1FIbJGtuY2rg9T6_IJBwp3XNRX0UpYVXH?usp=sharing) and move it to "data_pub".
+4. Make sure data_pub > data_ECMP2024 is part of your repository
+5. Adjust the absolute paths in the respective config files "config_video_recXXX_ECMP_results.json"(3 paths per file) before execution
+6. run 
 ```shell
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_video_rec1_ECMP_results.json
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_video_rec2_ECMP_results.json
