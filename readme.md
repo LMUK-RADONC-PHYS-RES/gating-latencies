@@ -22,6 +22,7 @@ Secondly, install the requirements:
 $ pip install -r path/to/this/repository/requirements.txt
 ```
 (Testing your installation is not needed if you only want to reproduce the results of our publication. However, if you encounter any inconsistencies with the results of our publications, make sure to run the tests first. In general, I strongly recommend test any installation before running any analyses.)
+
 5. Test your installation by first, running the in-silico test case on non-video data:
 ```shell
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_test_DIBH_noVid.json
