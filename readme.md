@@ -28,7 +28,7 @@ $ pip install -r path/to/this/repository/requirements.txt
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_test_DIBH_noVid.json
 ```
 The resulting beam-on latencies should all evolve around 2000 ms \pm 8.3 ms (1 frame). The resulting beam-off latencies should all evolve around 200 ms \pm 8.3 ms (1 frame).
-[] insert screenshot
+- [ ] insert screenshot
 
 6. Run an analysis of the test video (1 reference step pattern, 3 DIBH phases). This takes time, be patient. When the code is looping over each single frame of the video, a progress bar indicates your waiting time.
 ```shell
@@ -64,7 +64,8 @@ Required materials:
 * Motion phantom with surface. We use the CIRS Dynamic Motion Phantom (Sun Nuclear) with a thermosplastic mask mimicking a thorax surface. The phantom of your choice, does not necessarily cover a surface as large as a human thorax. The surface must be large enough to work well with the SGRT/linac setup at hand.
 * A motion pattern featuring a step function to detect the lower gating level and a DIBH pattern. Must be provided in the data format suitable for the phantom of choice. In DATA you can find example files (.txt and .png). The reference pattern at the beginning is crucial to detect the lower gating level. Otherwise, no analysis possible with this method.
 * Background screen to create a smooth background.
-  [] insert image of experimental setup 
+
+- [ ] insert image of experimental setup 
 
 Data Acquisition:
 1. In a standard bright room ambience, setup the screen in the background, setup the phantom. For ETD we do this in free breathing.
