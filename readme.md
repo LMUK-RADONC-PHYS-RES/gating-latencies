@@ -21,13 +21,15 @@ Secondly, install the requirements:
 ```shell
 $ pip install -r path/to/this/repository/requirements.txt
 ```
-(Testing your installation is not needed, though recommended, if you only want to reproduce the results of our publication. However, if you encounter any inconsistencies with the results of our publications, make sure to run the tests first.)
+(Testing your installation is not needed if you only want to reproduce the results of our publication. However, if you encounter any inconsistencies with the results of our publications, make sure to run the tests first. In general, I strongly recommend test any installation before running any analyses.)
 5. Test your installation by first, running the in-silico test case on non-video data:
 ```shell
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_test_DIBH_noVid.json
 ```
 The resulting beam-on latencies should all evolve around 2000 ms \pm 8.3 ms (1 frame). The resulting beam-off latencies should all evolve around 200 ms \pm 8.3 ms (1 frame).
-Secondly, run an analysis of the test video (1 reference step pattern, 3 DIBH phases). This takes time, be patient. When the code is looping over each single frame of the video, a progress bar indicates your waiting time.
+[] insert screenshot
+
+6. Run an analysis of the test video (1 reference step pattern, 3 DIBH phases). This takes time, be patient. When the code is looping over each single frame of the video, a progress bar indicates your waiting time.
 ```shell
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_test_DIBH_vid.json
 ```
@@ -47,7 +49,7 @@ $ <your-python-command> analyze_pixel_in_ROI_static.py config_video_rec1_ECMP_re
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_video_rec2_ECMP_results.json
 $ <your-python-command> analyze_pixel_in_ROI_static.py config_video_rec3_ECMP_results.json
 ```
-If you are interested in the details of the analysis, enable additional plotting feautures in the section "developerSettings" of the .json file, for example set "intermediate_plotting_of_reference" to "true" to plot the determination of the lower gating level.
+If you are interested in the details of the analysis, enable additional plotting feautures in the section "developerSettings" of the config.json file, for example set "intermediate_plotting_of_reference" to "true" to plot the determination of the lower gating level.
 
 ## Usage for quality assurance (QA)
 ### Clinical Remark
@@ -61,6 +63,7 @@ Required materials:
 * Motion phantom with surface. We use the CIRS Dynamic Motion Phantom (Sun Nuclear) with a thermosplastic mask mimicking a thorax surface. The phantom of your choice, does not necessarily cover a surface as large as a human thorax. The surface must be large enough to work well with the SGRT/linac setup at hand.
 * A motion pattern featuring a step function to detect the lower gating level and a DIBH pattern. Must be provided in the data format suitable for the phantom of choice. In DATA you can find example files (.txt and .png). The reference pattern at the beginning is crucial to detect the lower gating level. Otherwise, no analysis possible with this method.
 * Background screen to create a smooth background.
+[] insert image of experimental setup 
 
 Data Acquisition:
 1. In a standard bright room ambience, setup the screen in the background, setup the phantom. For ETD we do this in free breathing.
