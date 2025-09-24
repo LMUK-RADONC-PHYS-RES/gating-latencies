@@ -7,8 +7,8 @@ If you want to analyze the gating system latencies of your treatment unit now, p
 
 ## Description
 This project uses videos and photographs to estimate the gating latency of SGRT-gating systems.
-![Workflow](screenshots_readme/workflow_whole-loop_latencies_paper1.jpg)
-![DIBH cycles](screenshots_readme/graphic_DIBH_zyklen.jpg)
+![Workflow](screenshots_readme/workflow_whole-loop_latencies_paper1.png)
+![DIBH cycles](screenshots_readme/graphic_DIBH_zyklen.png)
 
 ## Installation & Testing
 1. Download or clone the code from this repository
