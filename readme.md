@@ -1,7 +1,9 @@
 # Estimating of Gating Latencies with an Elekta Linac and ExacTrac Dynamic
 
 ## Project status
-Project is in the very early stage. Code should not be used for any clinical application! If interested in a contribution contact Catrin.
+Project is in the very early stage. Use with caution and interpret your results with care.
+The code, as presented here, contains the analysis of end-to-end (E2E) latencies. Soon, the code to analyze the gating system latencies, will also be published. Though, the corresponding manuscript is in development and to be expected for 2026. Then, we will upload the full code base to analyze the gating system's latencies, too.
+If you want to analyze the gating system latencies of your treatment unit now, please contact Catrin for further support.
 
 ## Description
 This project uses videos and photographs to estimate the gating latency of SGRT-gating systems.
@@ -104,15 +106,15 @@ $ <your-python-command> analyze_pixel_in_ROI_static.py <your-config-file-name>.j
 ```
 
 ## Roadmap
-Future work will incorporate the assessment of separate latencies of the gating system and the linac.
+Future work will incorporate the assessment of separate latencies of the gating system and the linac. This work has been share at ESTRO2025 and DGMP2025. Code will follow after publication of manuscript in 2026.
 
 ## Contributing
 Are you interested in working on gating latencies of SGRT-systems or want to collaborate? Contact Catrin for details: catrin.rodenberg@med.uni-muenchen.de
 
 ## References
 [1] Worm, E.S. et al. (2023). Medical Physics, 50(6), 3289-3298; 
-[2] (reference of our poster once presented)
+[2] Rodenberg, C. et. a. (2025) Radiotherapy and Oncology, 206:S3685-S3686 (abstract ESTRO poster), DOI:10.1016/S0167-8140(25)02008-0
 
 ## License
-This code employs software that is licensed unter Apache License 2.0 (openCV), BSD 3-clause "new" or "revised" license (scipy), and MIT. Your are allowed to use this code for your private or research activities. You must not sell parts of this code. Please get in contact with us, once using it, so we can keep track of it.
+This code employs software that is licensed with Apache License 2.0 (openCV), BSD 3-clause "new" or "revised" license (scipy), and MIT. Your are allowed to use this code for your private or research activities. You must not sell parts of this code. Please get in contact with us, once using it, so we can keep track of it.
 
