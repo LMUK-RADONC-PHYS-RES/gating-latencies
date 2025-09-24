@@ -7,9 +7,8 @@ If you want to analyze the gating system latencies of your treatment unit now, p
 
 ## Description
 This project uses videos and photographs to estimate the gating latency of SGRT-gating systems.
-- [ ] add video frame from poster (after ECMP2024)
-- [ ] add DIBH graphic from poster (after ECMP2024)
-- [ ] add workflow (after publication of first paper)
+![Workflow](screenshots_readme/workflow_whole-loop_latencies_paper1.jpg)
+![DIBH cycles](screenshots_readme/graphic_DIBH_zyklen.jpg)
 
 ## Installation & Testing
 1. Download or clone the code from this repository
@@ -66,8 +65,7 @@ Required materials:
 * Motion phantom with surface. We use the CIRS Dynamic Motion Phantom (Sun Nuclear) with a thermosplastic mask mimicking a thorax surface. The phantom of your choice, does not necessarily cover a surface as large as a human thorax. The surface must be large enough to work well with the SGRT/linac setup at hand.
 * A motion pattern featuring a step function to detect the lower gating level and a DIBH pattern. Must be provided in the data format suitable for the phantom of choice. In DATA you can find example files (.txt and .png). The reference pattern at the beginning is crucial to detect the lower gating level. Otherwise, no analysis possible with this method.
 * Background screen to create a smooth background.
-
-- [ ] insert image of experimental setup 
+![Experimental_Setup_in_treatment_room.](screenshots_readme/experimental_setup_treatment_room.jpg)
 
 Data Acquisition:
 1. In a standard bright room ambience, setup the screen in the background, setup the phantom. For ETD we do this in free breathing.
